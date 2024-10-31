@@ -1,0 +1,65 @@
+[
+    {
+      "model": "app.agendamento",
+      "pk": 1,
+      "fields": {
+        "nome": "João",
+        "nome_animal": "Rex",
+        "telefone": "(XX) XXXX-XXXX",
+        "email": "joao@example.com",
+        "data_agendamento": "2024-05-10",
+        "horario_agendamento": "10:00:00",
+        "especialista": 1,
+        "clinica": 1
+      }
+    },
+    {
+      "model": "app.especialista",
+      "pk": 1,
+      "fields": {
+        "nome": "Dr. Silva",
+        "email": "drsilva@example.com",
+        "telefone": "(XX) XXXX-XXXX",
+        "cpf_cnpj": "123.456.789-00",
+        "especialidade": "Veterinária",
+        "clinica": 1,
+        "autonomo": false,
+        "crmv": "1234",
+        "horarios_disponiveis": [1],
+        "datas_disponiveis": [1]
+      }
+    },
+    {
+      "model": "app.clinica",
+      "pk": 1,
+      "fields": {
+        "nome": "Clinica Veterinária XYZ",
+        "endereco": "Rua ABC, 123",
+        "atendimento_24_horas": false,
+        "atendimento_comercial": true,
+        "especialidade": "Veterinária",
+        "descricao": "Descrição da clínica"
+      }
+    },
+    {
+      "model": "app.horarios",
+      "pk": 1,
+      "fields": {
+        "especialista": 1,
+        "clinica": 1,
+        "horario_ocupado": "2024-05-10T09:00:00Z",
+        "horario_disponivel": "2024-05-10T10:00:00Z"
+      }
+    },
+    {
+      "model": "app.datas",
+      "pk": 1,
+      "fields": {
+        "especialista": 1,
+        "clinica": 1,
+        "data_ocupada": "2024-05-10",
+        "data_disponivel": "2024-05-11"
+      }
+    }
+  ]
+  

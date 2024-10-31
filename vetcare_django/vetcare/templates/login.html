@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="../static/assets/ico/favicon.ico" />
+  <link rel="stylesheet" href="../static/css/login.css" />
+  <title>Login | VetCare Consult</title>
+</head>
+
+<body>
+  <section class="container-login">
+    <div class="form-login-container">
+      <img src="../static/assets/img/Vetcinza.png" alt="logo-login" class="logo-login" />
+      <div class="content-form">
+        <div class="div-header-form">
+          <h1>Seja Bem-vindo!</h1>
+          <span>Preencha os campos a baixos para realizar login na plataforma.</span>
+        </div>
+        <div class="form-login">
+          <form method="post" action="{% url 'login' %}" class="form-schedules">
+            {% csrf_token %}
+            <div class="container-input-label">
+              <label for="username" class="label">Username:</label>
+              <input type="text" id="username" name="username" class="input" placeholder="Digite seu username..." required />
+            </div>
+            <div class="container-input-label">
+              <label for="password" class="label">Senha:</label>
+              <input type="password" id="password" name="password" class="input" placeholder="Digite sua senha..." required />
+            </div>
+            <div class="div-btn-login">
+              <button type="submit" class="btn-login">ENTRAR NA CONTA</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="img-login-container">
+      <img src="../static/assets/img/photologin.png" alt="img-login" class="img-login" />
+    </div>
+  </section>
+</body>
+
+</html>

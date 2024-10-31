@@ -1,0 +1,36 @@
+<div class="header-container">
+  <div class="div-logo-header">
+    <img
+      src="./../static/assets/img/logoescura.png"
+      alt="VetCare Consult Logo"
+      class="logo-header"
+    />
+  </div>
+  <div class="div-content-info-header" id="menu-desktop-header">
+    <button class="btn-header-info">Para profissionais</button>
+    <button class="btn-header-info">
+      Pergunte ao Profissional de Saúde Animal
+    </button>
+    <img
+      src="../static/assets/img/icons/helpicon.png"
+      alt="Help Icon"
+      class="icon-header-help"
+    />
+    <div class="divider-vertical"></div>
+    {% if user.is_authenticated %}
+    <form method="post" action="{% url 'logout' %}">
+      {% csrf_token %}
+      <button type="submit" class="btn-header-login">Sair da Conta</button>
+    </form>
+    {% else %}
+    <a href="{% url 'login' %}" class="btn-header-login">
+      <img
+        src="../static/assets/img/icons/usericon.png"
+        alt="User Icon"
+        class="icon-header-user"
+      />
+      Entrar na conta
+    </a>
+    {% endif %}
+  </div>
+</div>

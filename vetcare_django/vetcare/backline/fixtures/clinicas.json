@@ -1,0 +1,15 @@
+[
+    {
+        "model": "backline_db.clinica",
+        "pk": 1,
+        "fields": {
+          "nome": "Clinica Veterinária XYZ",
+          "email": "clinica@example.com",
+          "endereco": "Rua ABC, 123",
+          "atendimento_24_horas": false,
+          "atendimento_comercial": true,
+          "especialidade": "Veterinária",
+          "descricao": "Descrição da clínica"
+        }
+      }
+]

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamentos | VetCare Consult</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/schendules.css' %}" />
+  </head>
+  <body>
+    {% include 'headerSchendule.html' %}
+    <div class="container-schendules-sc">
+      <div class="card-schendules-sc">
+        <div id="calendar-controls">
+          <button id="prevMonth">Mês anterior</button>
+          <span id="monthYear"></span>
+          <button id="nextMonth">Próximo mês</button>
+        </div>
+        <div id="calendar"></div>
+      </div>
+    </div>
+    <script src="{% static 'js/calendar.js' %}"></script>
+  </body>
+</html>

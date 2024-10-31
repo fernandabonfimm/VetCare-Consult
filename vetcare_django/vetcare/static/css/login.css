@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #2e765e;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../static/assets/font/Montserrat-VariableFont_wght.ttf")
+      format("tff"),
+    url("../../static/assets/font/Montserrat-VariableFont_wght.ttf")
+      format("tff");
+}
+
+.container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.img-login-container {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+.img-login {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+}
+.form-login {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.form-login-container {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-login {
+  min-width: 300px;
+  height: 120px;
+}
+
+.content-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+  padding: 36px;
+}
+
+.div-header-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.div-header-form h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 24px;
+  margin: 0;
+}
+
+.div-header-form span {
+  font-size: 22px;
+  font-weight: 500;
+  color: #d3d3d3;
+  line-height: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.form-schedules {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.container-input-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.input {
+  border: 2px solid #fafa96;
+  background-color: #f5f5dc;
+  color: #0a0a0a;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 16px;
+  width: 95%;
+  outline: none;
+}
+
+.input:focus {
+  border: 2px solid #ffa117;
+  background-color: #f5f5dc;
+  color: #0a0a0a;
+}
+
+.input::placeholder {
+  color: #b8b8b8;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.div-btn-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-login {
+  background-color: #ffa117;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+.div-description-register {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.div-description-register span {
+  font-size: 20px;
+  color: white;
+}
+
+.div-description-register a {
+  color: #ffa117;
+  font-weight: 600;
+  margin-left: 5px;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .container-login {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img-login-container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .form-login-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+[
+    {
+      "model": "backline_db.agendamento",
+      "pk": 1,
+      "fields": {
+        "nome": "João",
+        "nome_animal": "Rex",
+        "telefone": "(XX) XXXX-XXXX",
+        "email": "joao@example.com",
+        "data_agendamento": "2024-05-10",
+        "horario_agendamento": "10:00:00",
+        "especialista": 1,
+        "clinica": 1
+      }
+    }
+  ]
+  

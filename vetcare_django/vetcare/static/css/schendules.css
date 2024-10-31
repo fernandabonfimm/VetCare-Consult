@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../static/assets/font/Montserrat-VariableFont_wght.ttf")
+      format("tff"),
+    url("../../static/assets/font/Montserrat-VariableFont_wght.ttf")
+      format("tff");
+}
+
+.header-container-sc {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px;
+  flex-direction: row;
+}
+
+.div-logo-header-sc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo-header-sc {
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 110px;
+  max-height: 110px;
+  cursor: pointer;
+}
+.div-content-info-header-sc {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-header-help-sc {
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 30px;
+  max-height: 30px;
+  cursor: pointer;
+}
+
+.divider-vertical-sc {
+  width: 1px;
+  height: 30px;
+  background-color: #cbcbcb;
+}
+.text-header-sc {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+.text-header-sc-bold {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.div-content-info-header-text-sc {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.breadcrumb-sc {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 14px;
+  padding-left: 40px;
+  border-bottom: 1px solid #b8b8b8;
+  border-top: 1px solid #b8b8b8;
+}
+
+.text-breadcrumb-sc {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+.icon-breadcrumb-sc {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+.avatar-user-sc {
+  min-width: 35px;
+  min-height: 35px;
+  max-width: 35px;
+  max-height: 35px;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 2px solid #2e765e;
+}
+.btn-header-login {
+  font-style: none;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #2e765e;
+  color: #2e765e;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.container-schendules-sc {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: #f5f5dc;
+  min-height: 100vh;
+}
+.card-schendules-sc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  min-width: 100%;
+  min-height: auto;
+}
+#calendar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-schendules-sc {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card-schendules-sc {
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+#calendar div {
+  border: 1px solid #434343;
+  padding: 10px;
+  text-align: center;
+}
+
+#calendar .event {
+  border: 2px solid #ffa117;
+  background-color: #fcf0df;
+  color: #2e765e;
+  padding: 4px;
+  margin-top: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#calendar-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+#prevMonth {
+  padding: 8px;
+  border: 2px solid #ffa117;
+  background-color: #f8e0bd;
+  color: #ffa117;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+#nextMonth {
+  padding: 8px;
+  border: 2px solid #2e765e;
+  background-color: #d5fff1;
+  color: #2e765e;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+#monthYear {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}

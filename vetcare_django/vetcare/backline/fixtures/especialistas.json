@@ -1,0 +1,18 @@
+[
+    {
+        "model": "app.especialista",
+        "pk": 1,
+        "fields": {
+          "nome": "Dr. Silva",
+          "email": "drsilva@example.com",
+          "telefone": "(XX) XXXX-XXXX",
+          "cpf_cnpj": "123.456.789-00",
+          "especialidade": "Veterinária",
+          "clinica": 1,
+          "autonomo": false,
+          "crmv": "1234",
+          "horarios_disponiveis": [1],
+          "datas_disponiveis": [1]
+        }
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "model": "app.horarios",
+        "pk": 1,
+        "fields": {
+          "especialista": 1,
+          "clinica": 1,
+          "horario_ocupado": "2024-05-10T09:00:00Z",
+          "horario_disponivel": "2024-05-10T10:00:00Z"
+        }
+    }
+]

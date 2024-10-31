@@ -1,0 +1,12 @@
+[
+    {
+        "model": "app.datas",
+        "pk": 1,
+        "fields": {
+          "especialista": 1,
+          "clinica": 1,
+          "data_ocupada": "2024-05-10",
+          "data_disponivel": "2024-05-11"
+        }
+      }
+]
