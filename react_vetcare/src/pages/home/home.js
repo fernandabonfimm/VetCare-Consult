@@ -40,7 +40,7 @@ function SelectAnimal() {
           <img src={Helpicon} alt="Help Icon" class="icon-header-help" />
           <div class="divider-vertical"></div>
           <button class="btn-header-login" onClick={handleClick}>
-            <img src={Usericon} alt="User Icon" class="icon-header-user" />
+            <img src={Usericon} alt="User Icon" class="icon-header-user"/>
             {isActive ? "Entrar na conta" : "Sair da conta"}
           </button>
         </div>
